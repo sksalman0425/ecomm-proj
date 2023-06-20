@@ -1,7 +1,10 @@
-import { createStore } from "redux";//createStore function is depreciated that's why cross line coming
-import rootReducer from "./rootReducer";
+// import { createStore } from "redux";//createStore function is depreciated that's why cross line coming
+import {configureStore} from '@reduxjs/toolkit'
+import rootReducer from './rootReducer';
 
 
-const store=createStore(rootReducer);
+// const store=createStore(rootReducer);
+const store=configureStore({reducer:rootReducer});
 
 export default store;
+

@@ -23,6 +23,9 @@ export const cartData = (data = [], action) => {
                 data=[]
                 return [...data] 
         default:
-            return []
+            return data
     }
 }
+
+
+
