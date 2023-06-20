@@ -7,11 +7,11 @@ export const addToCart = (data) => {
         data:data
     }
 }
-export const removeFromCart = (data) => {
-    console.warn("action removeFromCart is called", data)
+export const removeToCart = (data) => {
+    console.warn("action removeToCart", data)
     return {
         type: REMOVE_FROM_CART,
-        data:data
+        data
     }
 }
 //for emptying cart we don't need data
